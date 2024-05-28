@@ -1,0 +1,158 @@
+.header {
+  display: grid;
+  grid-template-columns: auto;
+  background-color: #f6f6f6;
+  padding-inline: 17px 19px;
+
+  &__inner {
+    display: grid;
+    grid-template-columns: 80px 62px auto;
+    grid-template-areas:
+            "menu logo number"
+            "menu logo city";
+    align-items: center;
+    height: 65px;
+  }
+
+  &__menu-btn {
+    grid-area: menu;
+    border: none;
+    padding: 0;
+    width: 37px;
+    height: 26px;
+    position: relative;
+
+    &_hide {
+      visibility: visible;
+    }
+
+    &_visible {
+      position: absolute;
+      left: 4px;
+      top: -2px;
+      visibility: hidden;
+    }
+  }
+
+  &__logo {
+    grid-area: logo;
+    height: 18px;
+    img {
+      width: 100%;
+    }
+  }
+
+  &__phone-number {
+    display: grid;
+    align-items: end;
+    text-align: right;
+    height: 100%;
+    grid-area: number;
+    font-weight: 700;
+    font-size: 16px;
+  }
+
+  &__city {
+    text-align: right;
+    height: 100%;
+    grid-area: city;
+    font-size: 13px;
+  }
+
+  &__sign-up-btn {
+    display: none;
+  }
+
+  @media (min-width: $max-mobile-width) {
+    position: relative;
+    background-color: #fff;
+    padding-inline: 0;
+    grid-template-columns: minmax(5px, auto) minmax(850px, 1140px) minmax(5px, auto);
+    &__inner {
+      grid-column: 2 / 3;
+      grid-template-columns: 92px 134px auto 197px;
+      grid-template-areas:
+              "logo city number sign-up";
+    }
+
+    &__menu-btn {
+      display: none;
+    }
+
+    &__logo {
+      height: 27px;
+    }
+
+    &__city {
+      font-size: 14px;
+      position: relative;
+      line-height: 1.15em;
+      left: 19px;
+      top: 9px;
+
+      &::before {
+        content: url("../images/geo.svg");
+        position: relative;
+        top: 3px;
+      }
+
+      &::after {
+        display: block;
+        content: "ул. Ленина, 2Б";
+        color: #868686;
+        text-align: left;
+        position: relative;
+        left: 25px;
+      }
+    }
+
+    &__phone-number {
+      display: block;
+      line-height: 65px;
+      font-weight: 400;
+      position: relative;
+      margin-right: 36px;
+
+      &::before {
+        content: "";
+        display: inline-block;
+        width: 28px;
+        height: 28px;
+        background-image: url("../images/whatsapp.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        top: 8px;
+        right: 9px;
+      }
+    }
+
+    &__sign-up-btn {
+      grid-area: sign-up;
+      display: inline;
+      text-decoration: none;
+
+      .sign-up-btn__ellips {
+        text-align: center;
+        background-color: #0dbc91;
+        color: #fff;
+        border-radius: 50px;
+        height: 43px;
+        line-height: 43px;
+        width: 196px;
+
+        @media (hover: hover) {
+          &:hover {
+            background-color: #00d29f;
+          }
+        }
+
+        @media (hover: none) {
+          &:active {
+            background-color: #00d29f;
+          }
+        }
+      }
+    }
+  }
+}

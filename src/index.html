@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Многопрофильная клиника для детей и взрослых</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__inner">
+            <button class="header__menu-btn" onclick="showMenu()">
+                <img class="header__menu-btn_hide" src="./images/menu-button.svg" alt="Кнопка меню">
+                <img class="header__menu-btn_visible" src="./images/x-menu-button.svg" alt="Кнопка меню">
+            </button>
+            <a href="#" class="header__logo">
+                <img src="./images/logo.svg" alt="Лого">
+            </a>
+            <div class="header__phone-number"><span>+7(863) 000 00 00</span></div>
+            <div class="header__city"><span>Ростов-на-Дону</span></div>
+
+            <a href="#" class="header__sign-up-btn sign-up-btn">
+                <div class="sign-up-btn__ellips sign-up-btn__ellips_white">Записаться на приём</div>
+            </a>
+
+        </div>
+    </header>
+
+    <main>
+        <nav class="menu" id="menu">
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a href="#" class="menu__link">О клинике</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Услуги</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Специалисты</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Цены</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Контакты</a>
+                </li>
+            </ul>
+
+            <a href="#" class="menu__btn btn">
+                <div class="menu__btn-ellips">Записаться на приём</div>
+            </a>
+        </nav>
+        <section class="presentation">
+            <div class="presentation__img">
+                <img src="./images/main-img.jpg" alt="Фото клиники">
+            </div>
+            <div class="presentation__description">
+                <h2 class="presentation__title">Многопрофильная клиника для детей и взрослых</h2>
+                <p class="presentation__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi deserunt ea explicabo</p>
+            </div>
+        </section>
+
+        <section class="service">
+            <div class="service__inner">
+                <div class="slider">
+                    <div class="slider__element">
+                        <div class="service__img">
+                            <img src="./images/service-img.jpg" alt="Фото услуги">
+                        </div>
+                        <div class="service__service-content">
+                            <h2 class="service__title">Check-UP</h2>
+                            <h3 class="service__subtitle">для мужчин</h3>
+                            <ul class="service__list">
+                                <li class="service__item">
+                                    Гормональный скрининг
+                                </li>
+                                <li class="service__item">
+                                    Тестостерон
+                                </li>
+                                <li class="service__item">
+                                    Свободный тестостерон
+                                </li>
+                                <li class="service__item">
+                                    Глобулин, связывающий половые гормоны
+                                </li>
+                            </ul>
+                            <span class="service__price">Всего 2800₽</span>
+                            <span class="service__old-price">3500₽</span>
+                            <div class="service__service-btns service-btns">
+                                <a class="service-btns__btn btn" href="#">
+                                    <div class="btn__ellips">Записаться</div>
+                                </a>
+                                <a class="service-btns__btn btn" href="#">
+                                    <div class="btn__ellips btn__ellips_transparent">Подробнее</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider__element">
+                        <div class="service__img">
+                            <img src="./images/service-img.jpg" alt="Фото услуги">
+                        </div>
+                        <div class="service__service-content">
+                                <h2 class="service__title">Check-UP2</h2>
+                                <h3 class="service__subtitle">для мужчин</h3>
+                                <ul class="service__list">
+                                    <li class="service__item">
+                                        Гормональный скрининг
+                                    </li>
+                                    <li class="service__item">
+                                        Тестостерон
+                                    </li>
+                                    <li class="service__item">
+                                        Свободный тестостерон
+                                    </li>
+                                    <li class="service__item">
+                                        Глобулин, связывающий половые гормоны
+                                    </li>
+                                </ul>
+                                <span class="service__price">Всего 2800₽</span>
+                                <span class="service__old-price">3500₽</span>
+                                <div class="service__service-btns service-btns">
+                                    <a class="service-btns__btn btn" href="#">
+                                        <div class="btn__ellips">Записаться</div>
+                                    </a>
+                                    <a class="service-btns__btn btn" href="#">
+                                        <div class="btn__ellips btn__ellips_transparent">Подробнее</div>
+                                    </a>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="slider__element">
+                        <div class="service__img">
+                                <img src="./images/service-img.jpg" alt="Фото услуги">
+                            </div>
+                        <div class="service__service-content">
+                                <h2 class="service__title">Check-UP3</h2>
+                                <h3 class="service__subtitle">для мужчин</h3>
+                                <ul class="service__list">
+                                    <li class="service__item">
+                                        Гормональный скрининг
+                                    </li>
+                                    <li class="service__item">
+                                        Тестостерон
+                                    </li>
+                                    <li class="service__item">
+                                        Свободный тестостерон
+                                    </li>
+                                    <li class="service__item">
+                                        Глобулин, связывающий половые гормоны
+                                    </li>
+                                </ul>
+                                <span class="service__price">Всего 2800₽</span>
+                                <span class="service__old-price">3500₽</span>
+                                <div class="service__service-btns service-btns">
+                                    <a class="service-btns__btn btn" href="#">
+                                        <div class="btn__ellips">Записаться</div>
+                                    </a>
+                                    <a class="service-btns__btn btn" href="#">
+                                        <div class="btn__ellips btn__ellips_transparent">Подробнее</div>
+                                    </a>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="slider__element">
+                        <div class="service__img">
+                            <img src="./images/service-img.jpg" alt="Фото услуги">
+                        </div>
+                        <div class="service__service-content">
+                            <h2 class="service__title">Check-UP4</h2>
+                            <h3 class="service__subtitle">для мужчин</h3>
+                            <ul class="service__list">
+                                <li class="service__item">
+                                    Гормональный скрининг
+                                </li>
+                                <li class="service__item">
+                                    Тестостерон
+                                </li>
+                                <li class="service__item">
+                                    Свободный тестостерон
+                                </li>
+                                <li class="service__item">
+                                    Глобулин, связывающий половые гормоны
+                                </li>
+                            </ul>
+                            <span class="service__price">Всего 2800₽</span>
+                            <span class="service__old-price">3500₽</span>
+                            <div class="service__service-btns service-btns">
+                                <a class="service-btns__btn btn" href="#">
+                                    <div class="btn__ellips">Записаться</div>
+                                </a>
+                                <a class="service-btns__btn btn" href="#">
+                                    <div class="btn__ellips btn__ellips_transparent">Подробнее</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="pagination">
+            <button class="pagination__button pagination__button_left">
+                <svg class="pagination__left-arrow" width="34" height="18" viewBox="0 0 34 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M32.6718 7.67186H4.54493L9.20426 3.03512C9.72416 2.51768 9.72615 1.67678 9.20871 1.15689C8.69127 0.636925 7.8503 0.635 7.33041 1.15237L0.390691 8.05861C0.390226 8.05901 0.389894 8.05947 0.389496 8.05987C-0.129071 8.57731 -0.130731 9.42093 0.389363 9.94009C0.389828 9.94049 0.39016 9.94095 0.390558 9.94135L7.33028 16.8476C7.85011 17.3649 8.69107 17.3631 9.20858 16.8431C9.72602 16.3232 9.72402 15.4823 9.20413 14.9648L4.54493 10.3281H32.6718C33.4054 10.3281 34 9.7335 34 8.99998C34 8.26646 33.4054 7.67186 32.6718 7.67186Z"/>
+                </svg>
+            </button>
+            <span class="pagination__active-page">1</span>
+            <span class="pagination__inactive-page">/4</span>
+            <button type="button" class="pagination__button pagination__button_right">
+                <svg class="pagination__right-arrow" width="34" height="18" viewBox="0 0 34 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.32817 7.67186H29.4551L24.7957 3.03512C24.2758 2.51768 24.2739 1.67678 24.7913 1.15689C25.3087 0.636925 26.1497 0.635 26.6696 1.15237L33.6093 8.05861C33.6098 8.05901 33.6101 8.05947 33.6105 8.05987C34.1291 8.57731 34.1307 9.42093 33.6106 9.94009C33.6102 9.94049 33.6098 9.94095 33.6094 9.94135L26.6697 16.8476C26.1499 17.3649 25.3089 17.3631 24.7914 16.8431C24.274 16.3232 24.276 15.4823 24.7959 14.9648L29.4551 10.3281H1.32817C0.594646 10.3281 4.57764e-05 9.7335 4.57764e-05 8.99998C4.57764e-05 8.26646 0.594646 7.67186 1.32817 7.67186Z"/>
+                </svg>
+            </button>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__inner">
+            <a href="#" class="footer__logo">
+                <img src="./images/white-logo.svg" alt="Лого">
+            </a>
+            <div class="footer__links">
+                <ul class="footer__list">
+                    <li class="footer__item"><a href="#" class="footer__link">О клинике</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Услуги</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Специалисты</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Цены</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="footer__social social">
+                <ul class="social__list">
+                    <li class="social__item">
+                        <a href="#" class="social__link"><img src="./images/instagram.png" alt="Инстаграм"></a>
+                    </li>
+                    <li class="social__item">
+                        <a href="#" class="social__link"><img src="./images/whatsapp.png" alt="Whatsapp"></a>
+                    </li>
+                    <li class="social__item">
+                        <a href="#" class="social__link"><img src="./images/telegram.png" alt="Телеграм"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+
+    <div class="mail-form">
+        <div class="mail-form__form-wrp" id="mail-form__form-wrp">
+            <form class="mail-form__form" action="mailto.php" method="post">
+                <label class="mail-form__label" for="name">Имя:</label>
+                <input class="mail-form__input" name="name" id="name" type="text" minlength="3">
+
+                <label class="mail-form__label" for="email">Email:</label>
+                <input class="mail-form__input" name="email" id="email" type="email" minlength="5">
+
+                <label class="mail-form__label" for="message">Сообщение:</label>
+                <textarea class="mail-form__input mail-form__input_text-area" name="message" id="message" minlength="10"></textarea>
+
+                <button class="mail-form__submit-btn" id="mail-form__btn" type="submit">Отправить</button>
+            </form>
+        </div>
+        <button class="mail-form__show-btn"  onclick="showMailForm()">
+            <img src="./images/mail.svg" alt="Картинка письма" class="mail-form__img">
+        </button>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+.pagination {
+  text-align: center;
+  margin-block: 28px 38px;
+
+  &__button {
+    background-color: transparent;
+    border: none;
+  }
+
+  &__left-arrow {
+    margin-right: 30px;
+    fill: #E1E1E1;
+
+    @media (hover: hover) {
+      &:hover {
+        fill: #0dbc91;
+      }
+    }
+
+    @media (hover: none) {
+      &:active {
+        fill: #0dbc91;
+      }
+    }
+  }
+
+  &__active-page {
+    font-size: 18px;
+  }
+
+  &__inactive-page {
+    font-size: 18px;
+    color: #e1e1e1;
+  }
+
+  &__right-arrow {
+    margin-left: 30px;
+    fill: #E1E1E1;
+
+    @media (hover: hover) {
+      &:hover {
+        fill: #0dbc91;
+      }
+    }
+
+    @media (hover: none) {
+      &:active {
+        fill: #0dbc91;
+      }
+    }
+  }
+
+  @media (min-width: $max-mobile-width) {
+    margin-bottom: 96px;
+  }
+
+}
